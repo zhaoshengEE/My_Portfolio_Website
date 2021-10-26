@@ -21,6 +21,10 @@ html, body{
 
 }
 
+body *{
+    transition: 0.3s;
+}
+
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
     font-family: 'Roboto', sans-serif;
@@ -98,6 +102,10 @@ h6{font-size: 16px;}
     background-color: var(--mainColor);
     border-radius: 5px 5px 0 0;
     /* border: 1px dashed lightcoral; */
+}
+
+#navigation a{
+    color: var(--mainText);
 }
 
 #navigation{
@@ -183,17 +191,17 @@ h6{font-size: 16px;}
     background-color: #fff;
 }
 
-#blue-mode{
+#dark-mode{
     background-color: #192734;
 }
 
-#green-mode{
+/* #green-mode{
     background-color: #78866b;
 }
 
 #purple-mode{
     background-color: #7e4c74;
-}
+} */
 
 #settings-note{
     font-size: 12px;
