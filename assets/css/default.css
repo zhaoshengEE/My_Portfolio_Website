@@ -295,16 +295,33 @@ h6{font-size: 16px;}
     gap: 100px;
 }
 
-#skills{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--previewShadow);
-}
-
 .social-links{
     display: grid;
     align-content: center;
     text-align: center;
+}
+
+.social-menu {
+	display: flex;
+    justify-content: center;
+	list-style-type: none;
+}
+
+.social-menu i{
+    display: flex;
+    width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 35px;
+	margin-right: 15px;
+	transition: all 0.2s ease-in-out;
+    justify-content: center;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
 }
 
 .post-wrapper{
