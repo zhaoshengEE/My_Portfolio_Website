@@ -19,21 +19,24 @@
 <body>
     <section class="s1">
         <div class="main-container">
-
-            <div class="menu-wrapper">
-                <ul>
-                    <li><a href="#">Contact</a></li>
-
-                    <li><a href="#">ccc</a></li>
-
-                    <li><a href="#">Readings</a></li>
-
-                    <li><a href="#">aaa</a></li>
-                </ul>
+            <div class="topnav">
+                <a href="#">Home</a>
+                <div class="topnav-right">
+                    <a href="#social-area">Contact</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Readings</a>
+                    <a href="#">Travel</a>
+                </div>
             </div>
 
             <div class="greeting-wrapper">
                 <h1>Hi, I am Zhaosheng(Jerry) Li<br/>李兆盛</h1>
+
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                </div>
+
             </div>
 
             <div class="intro-wrapper">
@@ -45,22 +48,22 @@
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#contact-form">Contact</a></li>
+                        <li><a href="#social-area">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="left-column">
                     <img id="profile_pic", src="images/profile_image.jpg">
-                    <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+                    <!-- <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5> -->
 
-                    <div id="theme-options-wrapper">
+                    <!-- <div id="theme-options-wrapper">
                         <div data-mode="light" id="light-mode" class="theme-dot"></div>
                         <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
                         <!-- <div id="green-mode" class="theme-dot"></div>
                         <div id="purple-mode" class="theme-dot"></div> -->
-                    </div>
+                    <!-- </div> -->
 
-                    <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
+                    <!-- <p id="settings-note">*Theme settings will be saved for<br>your next visit</p> -->
                 </div>
 
                 <div class="right-column">
@@ -68,8 +71,8 @@
                         <div id="preview">
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
-                            <h3>Title</h3>
-                            <p>Text</p>
+                            <h3>An Enthusiast of Data Science and Software Engineering</h3>
+                            <h6>Currently a job seeker</h6>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
                         </div>
@@ -93,14 +96,16 @@
                 <hr>
 
                     <div class="social-links">
-                        <h3>Find me on the following social platforms</h3>
-                        <p>Description</p>
+                        <h3 id="social-area">Find me on the following social platforms</h3>
+                        <!-- <p>Description</p> -->
                         <ul class="social-menu">
                             <li><a target="_blank" href="https://github.com/zhaoshengEE"><i class="fab fa-github"></i></a></li>
 
                             <li><a target="_blank" href="https://www.linkedin.com/in/zhaosheng-jerry-li-6091b9176/"><i class="fab fa-linkedin"></i></a></li>
 
                             <li><a target="_blank" href="https://www.instagram.com/jerry_li_zhaosheng/"><i class="fab fa-instagram-square"></i></a></li>
+
+                            <li><a target="_blank" href="https://medium.com/@jerryli20160808"><i class="fab fa-medium"></i></a></li>
 
                             <li><a><i class="fab fa-weixin"></i></a></li>
                         </ul>
@@ -113,6 +118,7 @@
                     
                     <div class="skills">
                         <ul>
+                            <p>Description</p>
                             <li>abc</li>
                             <li>abc</li>
                             <li>abc</li>
@@ -121,6 +127,16 @@
                         </ul>
 
                         <ul>
+                            <p>Description</p>
+                            <li>abc</li>
+                            <li>abc</li>
+                            <li>abc</li>
+                            <li>abc</li>
+                            <li>abc</li>
+                        </ul>
+
+                        <ul>
+                            <p>Description</p>
                             <li>abc</li>
                             <li>abc</li>
                             <li>abc</li>
@@ -177,7 +193,7 @@
         </div>
     </section>
 
-    <section class="s2">
+    <!-- <section class="s2">
         <div class="main-container">
             <h3 style="text-align:center;">Get In Touch</h3>
 
@@ -197,7 +213,7 @@
                 <input id="submit-btn" type="submit" value="Send">
             </form>
         </div>
-    </section>
+    </section> -->
 
     <script type="text/javascript" src="assets/js/script.js"></script>
 
