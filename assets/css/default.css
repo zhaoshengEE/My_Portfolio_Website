@@ -329,10 +329,25 @@ h6{font-size: 16px;}
     justify-content: center;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--previewShadow);
+td:nth-child(even), th:nth-child(even) {
+    background-color: var(--previewBg);
+}
+
+th {
+    font-size: 22px;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+td {
+    font-size: 18px;
+}
+
+
+#skills{
+    border-radius: 10px;   
+    text-align: center;
+    color: var(--mainText);
+    border: 2px solid var(--borderColor);
 }
 
 .post-wrapper{
