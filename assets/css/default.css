@@ -250,14 +250,14 @@ h6{font-size: 16px;}
 
 #preview-shadow{
     background-color: var(--previewShadow);
-    width: 400px;
+    width: 450px;
     height: 180px;
     padding-left: 30px;
     padding-top: 30px;
 }
 
 #preview{
-    width: 400px;
+    width: 450px;
     border: 1.5px solid #17a2b8;
     background-color: var(--previewBg);
     padding: 15px;
@@ -368,17 +368,57 @@ td {
 }
 
 .post-preview{
-    background-color: #fff;
+    background-color: var(--secondaryColor);
     padding: 15px;
 }
 
 .post-title{
-    color: black;
+    color: var(--mainText);
     margin: 0;
 }
 
 .post-intro{
-    color:#4b5156;
+    color: var(--secondaryText);
+    font-size: 14px;
+}
+
+#reading_pic{
+    display: grid;
+    height: 420px;
+    width: 1190px;
+    object-fit: cover;
+    border-radius: 10px;   
+    border: 2px solid var(--borderColor);
+}
+
+.reading-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    gap: 25px;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+
+.reading-preview{
+    background-color: var(--secondaryColor);
+    padding: 15px;
+    border-radius: 10px;   
+}
+
+.reading-title{
+    color: var(--mainText);
+    margin: 0;
+    font-style: italic;
+}
+
+.reading-author{
+    font-style:italic;
+    font-size: 14px;
+}
+
+.reading-intro{
+    color: var(--secondaryText);
     font-size: 14px;
 }
 
