@@ -393,8 +393,8 @@ td {
 
 .reading-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 280px);
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, 380px);
+    gap: 30px;
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 15px;
