@@ -456,36 +456,6 @@ td {
     color: #fff;
 }
 
-.travel-images-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 380px);
-    gap: 30px;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 35px;
-}
-
-.travel-images{
-    font-size: 16px;
-    text-align: center;
-}
-
-.travel-images-vertical{
-    display: block;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: 0;
-}
-
-.travel-images-horizontal{
-    display: block;
-    width: 400px;
-    height: 100%;
-    object-fit: cover;
-    border: 0;
-}
-
 /* change the size of the webpage with the screen */
 @media screen and (max-width: 1200px){
     .main-container{
