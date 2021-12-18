@@ -226,6 +226,7 @@ h6{font-size: 16px;}
     width: 350px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
+    overflow: auto;
 }
 
 #settings-note{
@@ -362,6 +363,7 @@ td {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    overflow: auto;
 }
 
 .post-preview{
@@ -386,6 +388,7 @@ td {
     object-fit: cover;
     border-radius: 10px;   
     border: 2px solid var(--borderColor);
+    overflow:auto;
 }
 
 .reading-wrapper{
@@ -472,6 +475,7 @@ td {
     height: 400px;
     object-fit: cover;
     border: 0;
+    overflow: auto;
 }
 
 .travel-images-horizontal{
@@ -480,6 +484,7 @@ td {
     height: 100%;
     object-fit: cover;
     border: 0;
+    overflow: auto;
 }
 
 /* change the size of the webpage with the screen */
