@@ -383,12 +383,15 @@ td {
 
 #reading_pic{
     display: grid;
-    height: 500px;
+    /* height: 500px;
     width: 1190px;
-    object-fit: cover;
+    object-fit: cover; */
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
     border-radius: 10px;   
     border: 2px solid var(--borderColor);
-    overflow:auto;
+    overflow: auto;
 }
 
 .reading-wrapper{
