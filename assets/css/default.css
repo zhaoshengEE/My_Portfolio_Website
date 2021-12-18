@@ -65,18 +65,14 @@ h6{font-size: 16px;}
 
 .home-button{
     background-color: var(--mainColor);
-    overflow: hidden;
+    overflow: auto;
     border-bottom: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 }
 
-/* .home-button ul{
-    float: left;
-} */
-
 .topnav {
     background-color: #17a2b8;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 10px;   
     border: 2px solid var(--borderColor);
 }
@@ -385,7 +381,7 @@ td {
 
 #reading_pic{
     display: grid;
-    height: 420px;
+    height: 500px;
     width: 1190px;
     object-fit: cover;
     border-radius: 10px;   
@@ -445,7 +441,7 @@ td {
     font-size: 20px;
     font-family: arial;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     background: #17a2b8;
     transition: all .35s;
     font-style: oblique;
@@ -461,7 +457,7 @@ td {
     grid-template-columns: repeat(auto-fit, 380px);
     gap: 30px;
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
     margin-bottom: 35px;
 }
 
