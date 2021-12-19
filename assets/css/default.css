@@ -390,14 +390,14 @@ td {
     width: 100%;
     object-fit: contain;
     border-radius: 10px;   
-    border: 2px solid var(--borderColor);
+    /* border: 2px solid var(--borderColor); */
     overflow: auto;
 }
 
 .reading-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, 380px);
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 15px;
