@@ -493,7 +493,7 @@ td {
 /* change the size of the webpage with the screen */
 @media screen and (max-width: 1200px){
     .main-container{
-        width: 95%;
+        width: 100%;
     }
 }
 
