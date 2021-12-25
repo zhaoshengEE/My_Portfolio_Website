@@ -65,18 +65,14 @@ h6{font-size: 16px;}
 
 .home-button{
     background-color: var(--mainColor);
-    overflow: hidden;
+    overflow: auto;
     border-bottom: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 }
 
-/* .home-button ul{
-    float: left;
-} */
-
 .topnav {
     background-color: #17a2b8;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 10px;   
     border: 2px solid var(--borderColor);
 }
@@ -109,7 +105,7 @@ h6{font-size: 16px;}
 
 #theme-options-wrapper{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding-top: 50px;
 }
 
@@ -169,6 +165,7 @@ h6{font-size: 16px;}
     align-items: center;
     background-color: var(--mainColor);
     border-radius: 5px 5px 0 0;
+    /* overflow: hidden; */
     /* border: 1px dashed lightcoral; */
 }
 
@@ -220,6 +217,7 @@ h6{font-size: 16px;}
     grid-area: left-column;
     padding-top: 50px;
     padding-bottom: 50px;
+    /* overflow: hidden; */
     /* border: 1px dashed lightcoral; */
 }
 
@@ -230,6 +228,7 @@ h6{font-size: 16px;}
     width: 350px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
+    overflow: auto;
 }
 
 #settings-note{
@@ -242,16 +241,17 @@ h6{font-size: 16px;}
     grid-area: right-column;
     display: grid;
     align-content: center;
-
+    /* object-fit: contain; */
     padding-top: 50px;
     padding-bottom: 50px;
+    /* overflow: hidden; */
     /* border: 1px dashed lightcoral; */
 }
 
 #preview-shadow{
     background-color: var(--previewShadow);
     width: 450px;
-    height: 180px;
+    height: 250px;
     padding-left: 30px;
     padding-top: 30px;
 }
@@ -366,6 +366,7 @@ td {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    overflow: auto;
 }
 
 .post-preview{
@@ -385,11 +386,15 @@ td {
 
 #reading_pic{
     display: grid;
-    height: 420px;
+    /* height: 500px;
     width: 1190px;
-    object-fit: cover;
+    object-fit: cover; */
+    height: auto;
+    width: 100%;
+    object-fit: contain;
     border-radius: 10px;   
-    border: 2px solid var(--borderColor);
+    /* border: 2px solid var(--borderColor); */
+    overflow: auto;
 }
 
 .reading-wrapper{
@@ -445,7 +450,7 @@ td {
     font-size: 20px;
     font-family: arial;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     background: #17a2b8;
     transition: all .35s;
     font-style: oblique;
@@ -456,23 +461,86 @@ td {
     color: #fff;
 }
 
+.travel-main-container{
+    /* width: auto; */
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.travel-images-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    gap: 30px;
+    justify-content: center;
+    overflow: auto;
+    margin-bottom: 35px;
+}
+
+.travel-images{
+    font-size: 16px;
+    text-align: center;
+}
+
+.travel-images-vertical{
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 0;
+    overflow: auto;
+}
+
+.travel-images-horizontal{
+    display: block;
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    overflow: auto;
+}
+
 /* change the size of the webpage with the screen */
 @media screen and (max-width: 1200px){
     .main-container{
-        width: 95%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 800px){
+    .greeting-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'self-intro'
+            'theme-dots';
+    }
+    
     .intro-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas: 
             'nav-wrapper'
             'left-column'
             'right-column';
+        justify-content: center;
+        /* overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 60vh; */
     }
 
     .right-column{
+        justify-content: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .travel-main-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'place-name'
+            'theme-dots';
         justify-content: center;
     }
 }
