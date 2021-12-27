@@ -250,8 +250,8 @@ h6{font-size: 16px;}
 
 #preview-shadow{
     background-color: var(--previewShadow);
-    width: 450px;
-    height: 250px;
+    width: 460px;
+    height: 275px;
     padding-left: 30px;
     padding-top: 30px;
 }
