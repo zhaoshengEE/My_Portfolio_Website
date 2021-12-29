@@ -1,6 +1,5 @@
-# My_Personal_Website
+# My Personal Website
 
+Welcome to my personal website:
 
 [https://zhaoshengee.github.io/jerrylizs/](https://zhaoshengee.github.io/jerrylizs/)
-
-NOTE: The website is still under construction
